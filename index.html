@@ -2,66 +2,107 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Layla UI Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layla UI - Genshin</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="user-actions">
-            <button class="icon-btn">👤</button>
-            <button class="icon-btn">+</button>
-        </div>
-        <ul class="menu">
-            <li>Home</li>
-            <li class="active">Search</li>
-            <li>Message</li>
-        </ul>
-        <div class="auth-buttons">
-            <button class="btn-outline">Log in</button>
-            <button class="btn-primary">Sign up</button>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <img src="genshin-logo.png" alt="Logo" class="mini-logo">
-            <h1>Layla</h1>
-            <p>She is a student in the Rtawahist Darshan...</p>
-            <a href="#" class="read-more">Read More</a>
-        </div>
-        <div class="hero-image">
-            <img src="layla-render.png" alt="Layla">
-        </div>
-    </header>
-
-    <main class="dashboard-grid">
-        
-        <section class="section-artwork">
-            <h3>Artwork ></h3>
-            <div class="artwork-cards">
-                </div>
-        </section>
-
-        <section class="section-search">
-            <h3>Recent Search</h3>
-            <div class="search-list">
-                <button class="pill-btn blue">🔍 Layla ascension material</button>
-                <button class="pill-btn blue">🔍 Layla build</button>
-                <button class="pill-btn dark">🔍 Layla cosplay</button>
-                </div>
-        </section>
-
-        <section class="section-info">
-            <div class="info-card">
-                <img src="cryo-icon.png">
-                <div>
-                    <h4>Cryo character</h4>
-                    <p>Cryo is one of the seven Elements...</p>
-                </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-icons">
+                <button class="icon-btn">👤</button>
+                <button class="icon-btn active">+</button>
             </div>
-        </section>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Search</a></li>
+                <li><a href="#">Message</a></li>
+            </ul>
 
-    </main>
+            <div class="auth-buttons">
+                <button class="btn btn-outline">Log in</button>
+                <button class="btn btn-primary">Sign up</button>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-content">
+                <div class="logo-text">GENSHIN IMPACT</div>
+                <h1>Layla</h1>
+                <p class="subtitle">She is a student in the Rtawahist Darshan, specializing in Theoretical Astrology.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="hero-image-container">
+                <img src="https://webstatic.hoyoverse.com/upload/content/2022/11/08/9ba4353805b530c04f9828c467a784d2_3361543788771483861.png" alt="Layla Genshin" class="hero-img">
+            </div>
+            
+            <button class="arrow arrow-left">❮</button>
+            <button class="arrow arrow-right">❯</button>
+        </header>
+
+        <main class="dashboard">
+            
+            <section class="col-artwork">
+                <div class="section-header">
+                    <h3>Artwork ></h3>
+                </div>
+                <div class="artwork-grid">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/564x/2a/3a/0d/2a3a0d51381273950153833d83962649.jpg" alt="Art 1">
+                    </div>
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/564x/8a/a4/0c/8aa40c6600b684534882e7186937554f.jpg" alt="Art 2">
+                    </div>
+                </div>
+                <button class="btn-view-more">View More</button>
+            </section>
+
+            <section class="col-search">
+                <div class="section-header">
+                    <h3>Recent Search</h3>
+                </div>
+                <div class="search-list">
+                    <button class="pill-btn">🔍 Layla ascension material</button>
+                    <button class="pill-btn">🔍 Layla build</button>
+                    <button class="pill-btn dark">🔍 Kalpalata lotus locations</button>
+                    <button class="pill-btn dark-solid">🔍 Layla cosplay</button>
+                    <button class="pill-btn white">🔍 Layla Wallpaper</button>
+                </div>
+            </section>
+
+            <section class="col-info">
+                
+                <div class="info-card">
+                    <div class="icon-box">📂</div>
+                    <div class="text-box">
+                        <h4>Arquivos</h4>
+                        <p>Histórico de posts</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box">🗂️</div>
+                    <div class="text-box">
+                        <h4>Categorias</h4>
+                        <p>Tópicos e temas</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="icon-box">🏷️</div>
+                    <div class="text-box">
+                        <h4>Tags</h4>
+                        <p>Assuntos rápidos</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
 </body>
 </html>
